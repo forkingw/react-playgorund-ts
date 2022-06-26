@@ -1,20 +1,22 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+// import { Outlet } from 'react-router-dom';
 import './App.css';
+import Demo from './Demo';
 
 function App() {
   return (
     <div className="App">
-     <h1>forkingw</h1>
+     {/* <h1>forkingw</h1>
      <nav
       style={{
         borderBottom: "solid 1px",
         paddingBottom: "1rem"
       }}>
-      <Link to="/invoices">Invoinces</Link>|{" "}
-      <Link to="/expenses">Expense</Link>
-      </nav>
-      <Outlet />
+      <NavLink to="/invoices">Invoinces</NavLink>|{" "}
+      <NavLink to="/expenses">Expense</NavLink>
+      </nav> */}
+      {/* <Outlet /> */}
+      <Demo />
     </div>
   );
 }

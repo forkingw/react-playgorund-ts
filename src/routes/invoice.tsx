@@ -4,8 +4,6 @@ import { deleteInvoice, getInvoice } from "../data";
 export default function Invoice() {
   let navigate = useNavigate()
   let location = useLocation()
-  console.log(navigate);
-  console.log(location)
   
   let params = useParams();
   let invoice = params.invoiceId && getInvoice(parseInt(params.invoiceId, 10))
