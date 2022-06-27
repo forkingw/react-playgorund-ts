@@ -1,7 +1,9 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 // import { Outlet } from 'react-router-dom';
 import './App.css';
 import Demo from './Demo';
+import TsPlayground from './routes/ts-palyground';
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
       <NavLink to="/expenses">Expense</NavLink>
       </nav> */}
       {/* <Outlet /> */}
-      <Demo />
+      <Routes>
+        <Route path='demo' element={<Demo />} />
+        <Route index element={<TsPlayground />} />
+      </Routes>
     </div>
   );
 }
