@@ -19,8 +19,8 @@ function App() {
       </nav> */}
       {/* <Outlet /> */}
       <Routes>
-        <Route path='demo' element={<Demo />} />
         <Route index element={<TsPlayground />} />
+        <Route path='demo' element={<Demo />} />
       </Routes>
     </div>
   );
