@@ -37,7 +37,7 @@
 
 // console.log(fn(function A (str: string) {return new Date()}))
 
-// Typescript 构造函数！！！！ 
+// ! Typescript 构造函数！ 
 // interface T {
 //   s: string
 // }
