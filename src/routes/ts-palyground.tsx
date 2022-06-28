@@ -38,19 +38,19 @@
 // console.log(fn(function A (str: string) {return new Date()}))
 
 // Typescript 构造函数！！！！ 
-interface T {
-  s: string
-}
-type SomeConstructor = {
-  new (s: string): T;
-};
-function fn(ctor: SomeConstructor) {
-  return new ctor("hello");
-}
-class A {
-  constructor(public s:string) {}
-}
-fn(A)
+// interface T {
+//   s: string
+// }
+// type SomeConstructor = {
+//   new (s: string): T;
+// };
+// function fn(ctor: SomeConstructor) {
+//   return new ctor("hello");
+// }
+// class A {
+//   constructor(public s:string) {}
+// }
+// fn(A)
 
 // function firstElement<Type>(arr: Type[]): Type | undefined {
 //   return arr[0]
