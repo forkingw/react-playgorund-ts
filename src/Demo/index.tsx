@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { DevTools } from "./components/DevTools";
 import { useBodyBackground } from "./hook/useBodyBackground";
 import { useFaviconColor } from "./hook/useFaviconColor";
 import { useStargazerCount } from "./hook/useStargazerCount";
@@ -60,6 +61,8 @@ export default function Demo () {
           </Links>
         </HeaderContent>
       </Header>
+
+      {process.env.NODE_ENV === "development" && <DevTools />}
     </div>
   )
 }
