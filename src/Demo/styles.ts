@@ -123,3 +123,29 @@ export const LinkSeparator = styled("span")`
   margin: 0 12px;
   background: currentColor;
 `;
+export const PreviewContainer = styled("div")`
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  background-color: #fff;
+  border-top: 1px solid #aaa;
+`;
+
+export const PreviewTitle = styled("div")`
+  flex-shrink: 0;
+  width: 7em;
+  text-align: right;
+  padding-right: 20px;
+`;
+
+export const PreviewDemo = styled("div")`
+  flex-shrink: 0;
+`;
+
+export const PreviewOutput = styled("div")`
+  font-family: "PT Mono", monospace;
+  margin-left: 20px;
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+`;
