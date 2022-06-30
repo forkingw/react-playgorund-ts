@@ -1,4 +1,5 @@
-import { HexColorPicker, HslaColor, HslaColorPicker, HslaStringColorPicker, HslColor, HslColorPicker, HslStringColorPicker, HsvaColor, HsvaColorPicker, HsvaStringColorPicker, HsvColor, HsvColorPicker, HsvStringColorPicker, RgbaColor, RgbaColorPicker, RgbaStringColorPicker, RgbColor, RgbColorPicker, RgbStringColorPicker } from 'react-colorful'
+import { HslaColor, HslaColorPicker, HslaStringColorPicker, HslColor, HslColorPicker, HslStringColorPicker, HsvaColor, HsvaColorPicker, HsvaStringColorPicker, HsvColor, HsvColorPicker, HsvStringColorPicker, RgbaColor, RgbaColorPicker, RgbaStringColorPicker, RgbColor, RgbColorPicker, RgbStringColorPicker } from 'react-colorful'
+import { HexColorPicker } from '../../components/HexColorPicker'
 import { PickerPreview } from './PickerPreview'
 
 export const DevTools = (): JSX.Element => {

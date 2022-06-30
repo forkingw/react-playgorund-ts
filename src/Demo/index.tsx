@@ -4,7 +4,7 @@ import { useBodyBackground } from "./hook/useBodyBackground";
 import { useFaviconColor } from "./hook/useFaviconColor";
 import { useStargazerCount } from "./hook/useStargazerCount";
 import { GlobalStyles, Header, HeaderContent, HeaderDemo, HeaderDemoPicker, HeaderDescription, HeaderTitle, Link, Links, LinkSeparator, LinkStarIcon } from "./styles";
-import { RgbaColor } from './tyles'
+import { RgbaColor } from '../tyles'
 
 const getBrightness = ({ r, g, b}:RgbaColor) => (r * 299 + g * 587 + b * 144) / 1000;
 const getRandomColor = (): RgbaColor => {
