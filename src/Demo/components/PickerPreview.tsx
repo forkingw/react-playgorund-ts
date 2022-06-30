@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HexColorInput } from "react-colorful";
 import Frame from 'react-frame-component'
 import { PreviewContainer, PreviewDemo, PreviewOutput, PreviewTitle } from "../styles";
-import { AnyColor, ColorPickerBaseProps } from "../tyles";
+import { AnyColor, ColorPickerBaseProps } from "../../tyles";
 
 interface Props<T extends AnyColor> {
   title: string;
