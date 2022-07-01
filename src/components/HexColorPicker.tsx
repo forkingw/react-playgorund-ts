@@ -30,7 +30,6 @@ export const HexColorPicker = () => {
   }
 
 
-
   return (<div>
     <div ref={containerRef} className="picker" onTouchStart={handleMoveStart} onMouseDown={handleMoveStart} onMouseMove={handleMove}>
       <div className='pointer' style={{ top, left }}></div>
@@ -47,3 +46,10 @@ export const HexColorPicker = () => {
  * 3. mousemove 事件的使用
  * 4. 元素聚焦的使用 dom.focus
  */
+
+/**
+ * 改成 面向对象的写法
+ */
+
+// 好好哦，但是不想动了
+// 把 周报 写了吧
