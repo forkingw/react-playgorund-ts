@@ -1,11 +1,11 @@
-import { HslaColor, HslaColorPicker, HslaStringColorPicker, HslColor, HslColorPicker, HslStringColorPicker, HsvaColor, HsvaColorPicker, HsvaStringColorPicker, HsvColor, HsvColorPicker, HsvStringColorPicker, RgbaColor, RgbaColorPicker, RgbaStringColorPicker, RgbColor, RgbColorPicker, RgbStringColorPicker } from 'react-colorful'
+// import { HslaColor, HslaColorPicker, HslaStringColorPicker, HslColor, HslColorPicker, HslStringColorPicker, HsvaColor, HsvaColorPicker, HsvaStringColorPicker, HsvColor, HsvColorPicker, HsvStringColorPicker, RgbaColor, RgbaColorPicker, RgbaStringColorPicker, RgbColor, RgbColorPicker, RgbStringColorPicker } from 'react-colorful'
 import { HexColorPicker } from '../../components/HexColorPicker'
 import { PickerPreview } from './PickerPreview'
 
 export const DevTools = (): JSX.Element => {
   return (<div>
     <PickerPreview<string> title="HEX" PickerComponent={HexColorPicker} initialColor="#406090" />
-    <PickerPreview<RgbColor>
+    {/* <PickerPreview<RgbColor>
         title="RGB"
         PickerComponent={RgbColorPicker}
         initialColor={{ r: 60, g: 80, b: 120 }}
@@ -71,6 +71,6 @@ export const DevTools = (): JSX.Element => {
         title="RGB"
         PickerComponent={RgbColorPicker}
         initialColor={{ r: 60, g: 80, b: 120 }}
-      />
+      /> */}
   </div>)
 }

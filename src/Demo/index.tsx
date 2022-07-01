@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { DevTools } from "./components/DevTools";
-import { useBodyBackground } from "./hook/useBodyBackground";
+// import { useBodyBackground } from "./hook/useBodyBackground";
 import { useFaviconColor } from "./hook/useFaviconColor";
-import { useStargazerCount } from "./hook/useStargazerCount";
-import { GlobalStyles, Header, HeaderContent, HeaderDemo, HeaderDemoPicker, HeaderDescription, HeaderTitle, Link, Links, LinkSeparator, LinkStarIcon } from "./styles";
+// import { useStargazerCount } from "./hook/useStargazerCount";
+// import { GlobalStyles, Header, HeaderContent, HeaderDemo, HeaderDemoPicker, HeaderDescription, HeaderTitle, Link, Links, LinkSeparator, LinkStarIcon } from "./styles";
 import { RgbaColor } from '../tyles'
 
-const getBrightness = ({ r, g, b}:RgbaColor) => (r * 299 + g * 587 + b * 144) / 1000;
+// const getBrightness = ({ r, g, b}:RgbaColor) => (r * 299 + g * 587 + b * 144) / 1000;
 const getRandomColor = (): RgbaColor => {
   const colors = [
     { r: 209, g: 97, b: 28, a: 1 }, // orange
@@ -19,19 +19,19 @@ const getRandomColor = (): RgbaColor => {
   return colors[Math.floor(Math.random() * colors.length)];
 };
 export default function Demo () {
-  const [color, setColor] = useState<RgbaColor>(getRandomColor)
-  const textColor = getBrightness(color) > 128 || color.a < 0.5 ? "#000" : "#FFF";
-  const stargazerCount = useStargazerCount()
-  const handleChangeColor = (color: RgbaColor) => {
-    setColor(color)
-  }
+  const [color] = useState<RgbaColor>(getRandomColor)
+  // const textColor = getBrightness(color) > 128 || color.a < 0.5 ? "#000" : "#FFF";
+  // const stargazerCount = useStargazerCount()
+  // const handleChangeColor = (color: RgbaColor) => {
+  //   setColor(color)
+  // }
   const colorString = `rgba(${color.r}, ${color.g}, ${color.b}, ${color.a}`;
   useFaviconColor(colorString)
-  useBodyBackground(colorString)
+  // useBodyBackground(colorString)
   return (
     <div>
-      <GlobalStyles />
-      <Header style={{ color: textColor }}>
+      {/* <GlobalStyles /> */}
+      {/* <Header style={{ color: textColor }}>
         <HeaderDemo>
           <HeaderDemoPicker color={color} onChange={handleChangeColor} /> 
         </HeaderDemo>
@@ -60,7 +60,7 @@ export default function Demo () {
               </Link>
           </Links>
         </HeaderContent>
-      </Header>
+      </Header> */}
 
       {process.env.NODE_ENV === "development" && <DevTools />}
     </div>
