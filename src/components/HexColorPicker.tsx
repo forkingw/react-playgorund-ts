@@ -2,7 +2,7 @@
 // import { ColorInput } from "./common/ColorInput"
 
 // import { ColorPicker } from "./common/ColorPicker"
-import { useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './styles.css'
 
 // const isTouch = (event: MouseEvent | TouchEvent): event is TouchEvent => "touches" in event
@@ -11,8 +11,18 @@ export const HexColorPicker = () => {
   const containerRef = useRef<HTMLDivElement>(null)
   const [top] = useState(0)
   const [left] = useState(0)
-  const handleMoveStart = (e: any) => {
-    console.log('-=-=', e)
+  const handleMoveStart = (e: React.MouseEvent | React.TouchEvent) => {
+    // 1. 需要记录当前值， 然后 设定当前 小圆点 位置
+    // 点击的事件
+    console.log('handleMoveStart e', e)
+
+    // console.log('handleMoveStart nativeEvent', nativeEvent)
+    // const offsetX =  nativeEvent.offsetX
+    // const offsetY =  nativeEvent.offsetY
+    // console.log('offsetX  offsetY', offsetX, offsetY)
+  
+    
+    // 2. 绑定事件 移动事件、点击结束事件（触摸结束 事件）
   }
   const handleMove = (event: any) => {
     console.log('event', event)
@@ -31,7 +41,8 @@ export const HexColorPicker = () => {
 
 
   return (<div>
-    <div ref={containerRef} className="picker" onTouchStart={handleMoveStart} onMouseDown={handleMoveStart} onMouseMove={handleMove}>
+    {/*  onMouseDown={handleMoveStart} onMouseMove={handleMove} */}
+    <div ref={containerRef} className="picker" onTouchStart={handleMoveStart} onMouseDown={handleMoveStart}>
       <div className='pointer' style={{ top, left }}></div>
     </div>
     <div className='hue'></div>
@@ -48,8 +59,6 @@ export const HexColorPicker = () => {
  */
 
 /**
- * 改成 面向对象的写法
+ * TODO
+ * 
  */
-
-// 好好哦，但是不想动了
-// 把 周报 写了吧

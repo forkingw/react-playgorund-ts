@@ -86,6 +86,6 @@
 
 export default function TsPlayground () {
   return <div>
-    Hello World!
+    
   </div>
 }
